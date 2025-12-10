@@ -2,8 +2,7 @@ meta:
   description: "Per-channel phase calibration relative to reference"
   quantity: "phase_offset_deg"
   date: "2025-12-09"
-  reference_channel: "CH2"
-  reference_tile: "G20"
+  reference_channel: "" #TODO
   rx_power_dbm: -33.0                
   tx_gain_db: 80.0                  # configured TX gain
   tx_waveform_amplitude: 0.8        # baseband waveform amplitude
