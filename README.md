@@ -1,7 +1,7 @@
 # Techtile Description Repository
 
 This repository contains the authoritative description of the Techtile R&D infrastructure:
-geometry, hardware, timing network, testbed metadata, and DSS-compliant documentation.
+geometry, hardware, timing network, testbed metadata, and [DSS-compliant](https://arxiv.org/abs/2311.02662) documentation.
 
 ## Contents
 
