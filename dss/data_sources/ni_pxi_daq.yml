@@ -1,0 +1,7 @@
+DAQ: &DAQ
+  type: "daq"
+  model: "NI PXIe"
+  parameters:
+    num_channels: 100
+    sampling_rate_hz: 48000
+    clocking: "External 10MHz"
