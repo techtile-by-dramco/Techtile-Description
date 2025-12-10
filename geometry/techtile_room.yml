@@ -1,0 +1,55 @@
+meta:
+  description: "Global geometry of the Techtile room"
+  source: "Techtile papers (room + tiles)"
+  coordinate_system:
+    id: "techtile_room"
+    origin_definition: >
+      Origin at southwest floor corner when looking from the main door.
+      x-axis along room length (east, 8 m), y-axis along width (north, 4 m),
+      z-axis up (0–2.4 m).
+  units:
+    length: "meters"
+
+room:
+  dimensions:
+    length_x_m: 8.0
+    width_y_m: 4.0
+    height_z_m: 2.4
+  materials:
+    walls: "plywood (WikiHouse-style panels)"
+    floor: "wooden floor panels"
+    ceiling: "wooden panels"
+  notes: >
+    Construction based on WikiHouse modules with detachable tiles on
+    walls, ceiling and floor. Total 140 tiles of 1.2 m x 0.6 m.
+
+surfaces:
+  - id: "floor"
+    type: "plane"
+    normal: {x: 0.0, y: 0.0, z: 1.0}
+    z_m: 0.0
+
+  - id: "ceiling"
+    type: "plane"
+    normal: {x: 0.0, y: 0.0, z: -1.0}
+    z_m: 2.4
+
+  - id: "wall_south"
+    type: "plane"
+    normal: {x: 0.0, y: 1.0, z: 0.0}
+    y_m: 0.0
+
+  - id: "wall_north"
+    type: "plane"
+    normal: {x: 0.0, y: -1.0, z: 0.0}
+    y_m: 4.0
+
+  - id: "wall_west"
+    type: "plane"
+    normal: {x: 1.0, y: 0.0, z: 0.0}
+    x_m: 0.0
+
+  - id: "wall_east"
+    type: "plane"
+    normal: {x: -1.0, y: 0.0, z: 0.0}
+    x_m: 8.0
