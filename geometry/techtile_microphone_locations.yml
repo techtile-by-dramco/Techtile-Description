@@ -1,0 +1,10 @@
+meta:
+  description: "Physical microphone locations"
+  coordinate_system: "techtile_room_v1"
+  units: {position: "meters"}
+
+microphones:
+  - chain_id: 0
+    tile: "A01"
+    daq_channel: "/PXI1Slot12/ai1"
+    position: {x_m: 8.37, y_m: 0.00, z_m: 0.266}
