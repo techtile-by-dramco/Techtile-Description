@@ -7,6 +7,7 @@ meta:
   tx_gain_db: 80.0                  # configured TX gain
   tx_waveform_amplitude: 0.8        # baseband waveform amplitude
   tx_freq: 920e9
+  unit: "degrees"
   notes: >
     Values are in degrees. 
 
