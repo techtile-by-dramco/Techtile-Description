@@ -1,0 +1,40 @@
+meta:
+  description: "Measured acoustic properties of Techtile"
+  source: "Delabie et al. acoustic Techtile paper"
+  units:
+    frequency: "Hz"
+    rt60: "seconds"
+    spl: "dB"
+
+reverberation:
+  method: "Schroeder RT20 extrapolated to RT60"
+  standard: "ISO 3382-3:2022"
+  rt60_table:
+    - {freq_hz: 125,  rt60_s: 0.63}
+    - {freq_hz: 250,  rt60_s: 0.84}
+    - {freq_hz: 500,  rt60_s: 1.17}
+    - {freq_hz: 1000, rt60_s: 0.97}
+    - {freq_hz: 2000, rt60_s: 0.70}
+    - {freq_hz: 4000, rt60_s: 0.62}
+    - {freq_hz: 8000, rt60_s: 0.41}
+
+ambient_noise:
+  description: "Measured SPL at several key positions P1–P10"
+  positions:
+    - id: "P1"
+      location: "middle of Techtile"
+      notes: "represents quiet home/office-like baseline"
+    - id: "P2"
+      location: "two-thirds of Techtile length"
+    - id: "P3"
+      location: "front of server/network rack (doors open)"
+    - id: "P4"
+      location: "front of rack (doors closed)"
+    # ...
+  dominant_ultrasonic_sources:
+    - freq_khz: 29.5
+      source: "combined adapters + server + DAQ"
+    - freq_khz: 26.2
+      source: "3D printer"
+    - freq_khz: 32.0
+      source: "adapters"
